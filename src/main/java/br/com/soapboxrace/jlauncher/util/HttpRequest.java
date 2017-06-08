@@ -69,7 +69,7 @@ public class HttpRequest {
 			String message = e.getMessage();
 			message = message.replace(";", " ");
 			message = message.replace("&", "&amp;");
-			requestVO = new RequestVO(500, "<EngineExceptionTrans><Description>Launcher error [" + message + "]</Description></EngineExceptionTrans>");
+			requestVO = new RequestVO(500, "<EngineExceptionTrans><Description>Ошибка: [" + message + "]</Description></EngineExceptionTrans>");
 		}
 		return requestVO;
 	}

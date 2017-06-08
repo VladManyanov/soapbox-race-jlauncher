@@ -91,16 +91,16 @@ public class MainWindow extends javax.swing.JFrame {
 		mainTabbedPane.setEnabled(false);
 
 		jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-		jLabel2.setText("e-mail:");
+		jLabel2.setText("Эл. Почта:");
 
 		jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-		jLabel4.setText("password:");
+		jLabel4.setText("Пароль:");
 
 		loginEmailText.setEnabled(false);
 
 		loginPasswordText.setEnabled(false);
 
-		loginButton.setText("Login");
+		loginButton.setText("Авторизация");
 		loginButton.setEnabled(false);
 		loginButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,7 +109,7 @@ public class MainWindow extends javax.swing.JFrame {
 		});
 
 		loginSaveCredentialsCheckBox.setEnabled(false);
-		loginSaveCredentialsCheckBox.setLabel("save credentials");
+		loginSaveCredentialsCheckBox.setLabel("Сохранить пароль");
 
 		javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
 		jPanel2.setLayout(jPanel2Layout);
@@ -131,17 +131,17 @@ public class MainWindow extends javax.swing.JFrame {
 						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED).addComponent(loginSaveCredentialsCheckBox)
 						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE).addComponent(loginButton).addContainerGap()));
 
-		mainTabbedPane.addTab("Launcher", jPanel2);
+		mainTabbedPane.addTab("Лаунчер", jPanel2);
 
-		jLabel6.setText("invite Ticket:");
+		jLabel6.setText("Инвайт-код:");
 
-		jLabel7.setText("password:");
+		jLabel7.setText("Пароль:");
 
-		jLabel8.setText("confirm password:");
+		jLabel8.setText("Повтор пароля:");
 
-		jLabel9.setText("e-mail:");
+		jLabel9.setText("Эл. Почта:");
 
-		createButton.setText("Create Account");
+		createButton.setText("Регистрация");
 		createButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				createButtonActionPerformed(evt);
@@ -159,7 +159,7 @@ public class MainWindow extends javax.swing.JFrame {
 												.addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING).addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
 												.addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)))
 								.addGroup(jPanel3Layout.createSequentialGroup().addContainerGap().addComponent(jLabel8)))
-								.addGap(18, 18, 18)
+								.addGap(16, 16, 16)
 								.addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(createTicketText).addComponent(createEmailText)
 										.addComponent(createPasswd1Text).addComponent(createPasswd2Text, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)))
 						.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup().addGap(0, 0, Short.MAX_VALUE).addComponent(createButton)))
@@ -182,13 +182,13 @@ public class MainWindow extends javax.swing.JFrame {
 						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(createButton)
 						.addContainerGap()));
 
-		mainTabbedPane.addTab("Create Account", jPanel3);
+		mainTabbedPane.addTab("Регистрация", jPanel3);
 
-		jLabel1.setText("Server address:");
+		jLabel1.setText("Адрес сервера:");
 
 		pathLabel.setText("...");
 
-		changeGamePathButton.setText("Change game exe path");
+		changeGamePathButton.setText("EXE-файл игры");
 		changeGamePathButton.setToolTipText("");
 		changeGamePathButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -196,7 +196,7 @@ public class MainWindow extends javax.swing.JFrame {
 			}
 		});
 
-		launchButton.setText("Launch Game");
+		launchButton.setText("Запустить игру");
 		launchButton.setEnabled(false);
 		launchButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,7 +207,7 @@ public class MainWindow extends javax.swing.JFrame {
 		jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
 		messageLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-		messageLabel.setText("<html><b>SoapBox Race World Online Launcher beta v0.0.5</b></html>");
+		messageLabel.setText("<html><b>SoapBox Race World Online Launcher beta v0.0.5 - RUS Version</b></html>");
 
 		javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
 		jPanel4.setLayout(jPanel4Layout);
@@ -220,14 +220,14 @@ public class MainWindow extends javax.swing.JFrame {
 
 		messageLabel.getAccessibleContext().setAccessibleName("messageLabel");
 
-		serverAddrCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "click get server List" }));
+		serverAddrCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Получить список серверов" }));
 		serverAddrCombo.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				serverAddrComboActionPerformed(evt);
 			}
 		});
 
-		srvListButton.setText("Get Server List");
+		srvListButton.setText("Поиск серверов");
 		srvListButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				srvListButtonActionPerformed(evt);
@@ -287,7 +287,7 @@ public class MainWindow extends javax.swing.JFrame {
 				serverAddrCombo.addItem(string);
 			}
 		} catch (Exception e) {
-			setErrorMessage("Error loading server list");
+			setErrorMessage("Ошибка поиска серверов!");
 		}
 	}// GEN-LAST:event_srvListButtonActionPerformed
 
@@ -319,7 +319,7 @@ public class MainWindow extends javax.swing.JFrame {
 
 	private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_createButtonActionPerformed
 		if (!Main.copyModules(pathLabel.getText())) {
-			setErrorMessage("Can't copy module files to game folder, please check folder permissions, or run as admin");
+			setErrorMessage("Ошибка: Нельзя скопировать файлы лаунчера в папку игры! (Переместите файлы игры и лаунчер из Program Files в другое место!)");
 			launchButton.setEnabled(false);
 			return;
 		}
@@ -336,7 +336,7 @@ public class MainWindow extends javax.swing.JFrame {
 				setErrorMessage(create.getMessage());
 			} else {
 				launchButton.setEnabled(true);
-				setMessage(create.getMessage() + " Launch Game!");
+				setMessage(create.getMessage() + " Запустить игру!");
 			}
 			loginOkVO = create.getLoginOkVO();
 		} catch (Exception e) {
@@ -346,7 +346,7 @@ public class MainWindow extends javax.swing.JFrame {
 
 	private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_loginButtonActionPerformed
 		if (!Main.copyModules(pathLabel.getText())) {
-			setErrorMessage("Can't copy module files to game folder, please check folder permissions, or run as admin");
+			setErrorMessage("Ошибка: Нельзя скопировать файлы лаунчера в папку игры! (Переместите файлы игры и лаунчер из Program Files в другое место!)");
 			launchButton.setEnabled(false);
 			return;
 		}
@@ -357,7 +357,7 @@ public class MainWindow extends javax.swing.JFrame {
 		if (login.doLogin()) {
 			loginOkVO = login.getLoginOkVO();
 			launchButton.setEnabled(true);
-			setMessage("Login OK, Launch Game!");
+			setMessage("Вы зашли на сервер, запускайте игру!");
 		} else {
 			loginOkVO = null;
 			String message = login.getMessage();
@@ -462,10 +462,10 @@ public class MainWindow extends javax.swing.JFrame {
 	private void checkGameFile(String path) {
 		if (Main.checkGameMd5(path)) {
 			enableAll();
-			setMessage("SoapBox Race World Online Launcher beta v0.0.5");
+			setMessage("SoapBox Race World Online Launcher beta v0.0.5 - RUS Version");
 		} else {
 			disableAll();
-			setErrorMessage("Invalid or modded game file!");
+			setErrorMessage("Изменённый nfsw.exe! Вам нужен оригинальный файл игры.");
 		}
 	}
 
